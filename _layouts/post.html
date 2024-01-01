@@ -18,6 +18,10 @@ layout: default
         </a>
       </li>
       {% endfor %}
+      
+      {% for category in page.categories % }
+        <a href="{{ site.url }}/category/{{ category }}.html" >{{ category }}</a>
+      {% endfor %}
     </ul>
   </div>
 
