@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "test"
-tags: []
+tags: ["a", "b"]
 comments: true
 ---
 # 첫 글
