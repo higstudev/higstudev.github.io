@@ -32,7 +32,7 @@ navigation:
     url: https://github.com/AWEEKJ/kiko-now
 
 # Pagination
-paginate: 7
+paginate: 5
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -43,7 +43,7 @@ footer-links:
   flickr:
   github: junho040812
   googleplus: # anything in your profile username that comes after plus.google.com/
-  instagram: @higstudev
+  instagram: higstudev
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
