@@ -18,7 +18,7 @@ S = [1 for i in range(n + 1)]
 P = []
 for i in range(2, n + 1):
     if S[i]:
-        for j in range(n // i + 1):
+        for j in range(2, n // i + 1):
             S[i * j] = 0
         P.append(i)
 ``` 
