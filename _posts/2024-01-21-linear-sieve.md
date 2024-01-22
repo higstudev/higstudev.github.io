@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "오일러 체 (Linear Sieve)"
-tags: ["수학", "정수론"]
+tags: ["수학", "정수론", "소수", "소인수분해"]
 comments: true
 --- 
 
