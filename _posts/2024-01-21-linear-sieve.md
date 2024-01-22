@@ -54,12 +54,11 @@ P = []
 for i in range(2, n + 1):
     if spf[i] == 0:
         P.append(i)
-    spf[i] = i
-
-for p in P:
-    if p > spf[i] or i * p > n:
-        break
-    spf[i * p] = p
+        spf[i] = i
+    for p in P:
+        if p > spf[i] or i * p > n:
+            break
+        spf[i * p] = p
 ``` 
 
 $i$를 $n$까지 탐색하고, 각 $i$에 대해 $n = i \times spf(n)$인 모든 $n$를 탐색하므로 $n$ 이하의 모든 자연수에 대해 탐색할 수 있다. $n = ip$에 대해 위 범위에 포함되지 않는 경우가 없음을 보임으로써 증명할 수 있다. 
