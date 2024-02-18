@@ -36,9 +36,9 @@ n / 2 & 2\mid n \end{cases}$$
 
 함수 $T(n)$이 조건에 따라 나뉘기 때문에 좀 지저분해 보인다. 사실 위 과정을 반복하는 것은 '어떤 홀수 $n$에 대해 $3n+1$에 존재하는 2를 전부 제거해 새로운 홀수를 얻는 과정'을 반복하는 것과 같다. 이를 이용해 새 함수를 정의해보자. 
 
-$$F : 2\mathbb{N}+1 \to 2\mathbb{N}+1$$
+$$F : 2ℕ+1 \to 2ℕ+1$$
 
-$$\exists a\in\mathbb{N}, F(n)=\frac{3n+1}{2^a}$$ 
+$$\exists a \in ℕ, F(n)=\frac{3n+1}{2^a}$$ 
 
 이를 이용하면 수열에서 짝수를 고려하지 않아도 된다. 예를 들어 3에 대해 위를 적용하면 3→5→1이다. (이후 이 수열을 홀수 수열이라 부른다.) 
 
@@ -63,7 +63,7 @@ $n$이 3의 배수이면 불가능하다.
 
 일단 $n'$이 자연수인지 아닌지를 무시해보자. 그리고 역과정을 함수로 정의하자. 
 
-$$C : 2\mathbb{N}+1 \times \mathbb{N} \to \mathbb{Q}$$
+$$C : 2ℕ+1 \times ℕ \to ℚ$$
 
 $$C(n, a) = \frac{2^a n - 1}{3}$$ 
 
@@ -130,10 +130,9 @@ $\{a_n\}$이 다음과 같은 경우를 고려하자.
 
 이제 위를 두 수열로 다시 쪼갤 것이다. $\{p_n\}$은 1이 아닌 원소들을, $\{q_n\}$은 1이 연속으로 등장하는 횟수를 담는다. 위의 경우 $\{p_n\}$과 $\{q_n\}$은 각각 다음과 같다. 
 
-```
-p_n = [2, 5, 3, 1]
-q_n = [1, 0, 2, 1]
-``` 
+```p_n = [2, 5, 3, 1]```
+
+```q_n = [1, 0, 2, 1]``` 
 
 $\{p_n\}$과 $\{q_n\}$의 원소를 집합으로 묶어 각각 $P$와 $N$이라고 하겠다. 
 
@@ -186,7 +185,7 @@ d_{k+1} = C^{q_k}(u_k, 1) = d_1
 
 # 보조 정리 
 
-* 이 장에 등장하는 $n$은 앞에서 등장한 $n$과 다르다. * 
+**이 장에 등장하는 $n$은 앞에서 등장한 $n$과 다르다.**
 
 $$|N| = \sum_{k=1}^n {\delta(d_k, p_k)}$$ 
 
@@ -238,7 +237,7 @@ $$|N| = \sum_{k=1}^n \delta(d_k, p_k) > \sum_{p \in P} \delta(p)$$
 
 # $S_0$와 $n$의 관계 
 
-* 다시 원래의 $n$ (홀수 사이클의 길이)으로 돌아간다. * 
+**다시 원래의 $n$ (홀수 사이클의 길이)으로 돌아간다.**
 
 편의상 $S_0$를 $s$라고 하자. 
 
@@ -250,15 +249,15 @@ $$S_k = \begin{cases} \displaystyle\sum_{i=k+1}^n {a_i} & k < n \\
 따라서 
 
 $$\begin{align}
-s &= \sum_{k=1}^n {a_k} \\
-&= \sum_{p \in P}{p} + \sum_{q \in N}{q}
+s &= \sum_{k=1}^n {a_k}\\
+&= \sum_{p \in P}{p} + \sum_{q \in N}{q}\\
 &= \sum_{p\ in P}{p} + |N|
 \end{align}$$ 
 
 이다. 
 
 $$\begin{align}
-n &= \sum_{p \in P}{1} + \sum_{q \in N}{1}
+n &= \sum_{p \in P}{1} + \sum_{q \in N}{1}\\
 &= \sum_{p \in P}{1} + |N|
 \end{align}$$ 
 
@@ -268,7 +267,7 @@ $$\frac{s}{n} = \frac{\displaystyle \sum_{p \in P}{p} + |N|}{\displaystyle \sum_
 
 이다. 
 
-위 식은 $|N|$에 대한 감소함수이므로 
+위 식은 $\lmid N \rmid$에 대한 감소함수이므로 
 
 $$\frac{s}{n} < \frac{\displaystyle \sum_{p \in P}{\left( p + \delta(p) \right)}}{\displaystyle \sum_{p \in P}{\left( 1 + \delta(p) \right)}}$$ 
 
@@ -282,11 +281,13 @@ $$\frac{p + \delta(p)}{1 + \delta(p)} < \frac{2 + \delta(2)}{1 + \delta(2)}$$
 
 이다. 따라서 
 
-$$\frac{s}{n} &= \frac{\displaystyle \sum_{p \in P}{p + \delta(p)}}{\displaystyle \sum_{p \in P}{1 + \delta(p)}} \\
+$$\begin{align}
+\frac{s}{n} &= \frac{\displaystyle \sum_{p \in P}{p + \delta(p)}}{\displaystyle \sum_{p \in P}{1 + \delta(p)}} \\
 &< \frac{2 + \delta(2)}{1 + \delta(2)} \\
 &= 1 + \frac{1}{\log_{3/2}{\frac{1.5\times 2^71 + 1}{1.5\times 2^70 + 1}}}
 &= \log_2{3} + 2.38277 \cdots \times 10^{-22}
-&:= \tau$$ 
+&:= \tau
+\end{align}$$ 
 
 이다. $\{a_n\}$을 타고 가는 사이클이 존재할 때 그 원소에 대한 식 
 
@@ -303,8 +304,6 @@ $$log_2{3} < \frac{s}{n} < \tau$$
 # 해 찾기 
 
 $log_2{3}$와 $log_2{3} + 2.38277 \times 10^{-22}$ 사이에 존재하는 유리수($s / n$)를 찾아야 한다. $log_2{3}$를 연분수 분해 후 근사한 것이 후보가 될 것으로 예상할 수 있다. 
-
-$$1 + \frac{1}{1 + \frac{1}{1 + \frac{1}{2 + \frac{1}{2 + \frac{1}{3 + \cdots}}}}}$$ 
 
 그러나 그 땐 이걸 몰랐다. 
 
