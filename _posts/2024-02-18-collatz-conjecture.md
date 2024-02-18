@@ -93,7 +93,7 @@ $x_n$이 $x_1$에 대한 일차식이므로 이것은 항상 해가 존재하며
 
 식을 유도하는 것은 어렵지 않으나 귀찮으므로 결과만 써보겠다. 보조 수열 $\{S_n\}$을 다음과 같이 정의하자. 
 
-$$S_k = \begin{cases} \displaystyle \sum_{i=k+1}^{n}{a_i} & 0 \geq k < n \\
+$$S_k = \begin{cases} \displaystyle \sum_{i=k+1}^{n}{a_i} & 0 \leq k < n \\
 0 & k = n \end{cases}$$ 
 
 그러면 
@@ -243,7 +243,7 @@ $$|N| = \sum_{k=1}^n \delta(d_k, p_k) > \sum_{p \in P} \delta(p)$$
 
 $\{S_n\}$의 정의는 다음과 같다. 
 
-$$S_k = \begin{cases} \displaystyle\sum_{i=k+1}^n {a_i} & 0 \geq k < n \\
+$$S_k = \begin{cases} \displaystyle\sum_{i=k+1}^n {a_i} & 0 \leq k < n \\
 0 & k = n \end{cases}$$ 
 
 따라서 
