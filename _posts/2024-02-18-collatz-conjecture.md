@@ -159,7 +159,7 @@ C^{q}(n, 1) &= \frac{2 \left( \frac{2 \left( \cdots \right) - 1}{3} \right) - 1}
 
 또한 $n$에서 $p$만큼 올라갔을 때 얼마나 내려가야 다시 $n$이 되는가를 함수로 정의할 것이다. 즉 $C^{q}(C(n, p), 1) = n$인 수 $q$의 값을 $\delta(n, p)$로 정의하겠다. 이 경우 식을 정리하면 
 
-$$C^{q}(C(n, p), 1) = \left( \frac{2}{3} \right) (C(n, p) + 1) - 1$$ 
+$$C^{q}(C(n, p), 1) = \left( \frac{2}{3} \right)^q (C(n, p) + 1) - 1$$ 
 
 이므로 
 
