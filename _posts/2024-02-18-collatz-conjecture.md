@@ -284,7 +284,7 @@ $$\frac{p + \delta(p)}{1 + \delta(p)} < \frac{2 + \delta(2)}{1 + \delta(2)}$$
 $$\begin{align}
 \frac{s}{n} &= \frac{\displaystyle \sum_{p \in P}{p + \delta(p)}}{\displaystyle \sum_{p \in P}{1 + \delta(p)}} \\
 &< \frac{2 + \delta(2)}{1 + \delta(2)} \\
-&= 1 + \frac{1}{\log_{3/2}{\frac{1.5\times 2^{71} + 1}{1.5\times 2^{70} + 1}}} \\
+&= 1 + \frac{1}{\log_{\frac{3}{2}}{\frac{1.5\times 2^{71} + 1}{1.5\times 2^{70} + 1}}} \\
 &= \log_2{3} + 2.38277 \cdots \times 10^{-22} \\
 &:= \tau
 \end{align}$$ 
@@ -303,7 +303,7 @@ $$\log_2{3} < \frac{s}{n} < \tau$$
 
 # 해 찾기 
 
-$\log_2{3}$와 $\log_2{3} + 2.38277 \times 10^{-22}$ 사이에 존재하는 유리수($s / n$)를 찾아야 한다. $log_2{3}$를 연분수 분해 후 근사한 것이 후보가 될 것으로 예상할 수 있다. 
+$\log_2{3}$와 $\log_2{3} + 2.38277 \times 10^{-22}$ 사이에 존재하는 유리수($s / n$)를 찾아야 한다. $\log_2{3}$를 연분수 분해하여 근사한 것이 후보가 될 것으로 예상할 수 있다. 
 
 그러나 그 땐 이걸 몰랐다. 
 
