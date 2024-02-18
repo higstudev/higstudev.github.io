@@ -285,7 +285,7 @@ $$\begin{align}
 \frac{s}{n} &= \frac{\displaystyle \sum_{p \in P}{p + \delta(p)}}{\displaystyle \sum_{p \in P}{1 + \delta(p)}} \\
 &< \frac{2 + \delta(2)}{1 + \delta(2)} \\
 &= 1 + \frac{1}{\log_{3/2}{\frac{1.5\times 2^{71} + 1}{1.5\times 2^{70} + 1}}} \\
-&= \log_2{3} + 2.38277 \cdots \times 10^{-22}
+&= \log_2{3} + 2.38277 \cdots \times 10^{-22} \\
 &:= \tau
 \end{align}$$ 
 
