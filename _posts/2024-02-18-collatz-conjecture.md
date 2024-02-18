@@ -267,7 +267,7 @@ $$\frac{s}{n} = \frac{\displaystyle \sum_{p \in P}{p} + |N|}{\displaystyle \sum_
 
 이다. 
 
-위 식은 $\lmid N \rmid$에 대한 감소함수이므로 
+위 식은 $\mid N \mid$에 대한 감소함수이므로 
 
 $$\frac{s}{n} < \frac{\displaystyle \sum_{p \in P}{\left( p + \delta(p) \right)}}{\displaystyle \sum_{p \in P}{\left( 1 + \delta(p) \right)}}$$ 
 
@@ -297,13 +297,13 @@ $$x_1=\frac{\displaystyle\sum_{k=1}^n {2^{S_k} 3^{k-1}}}{2^{S_0} - 3^n}$$
 
 위에서 구한 식과 연립하면 
 
-$$log_2{3} < \frac{s}{n} < \tau$$ 
+$$\log_2{3} < \frac{s}{n} < \tau$$ 
 
 이다. 
 
 # 해 찾기 
 
-$log_2{3}$와 $log_2{3} + 2.38277 \times 10^{-22}$ 사이에 존재하는 유리수($s / n$)를 찾아야 한다. $log_2{3}$를 연분수 분해 후 근사한 것이 후보가 될 것으로 예상할 수 있다. 
+$\log_2{3}$와 $\log_2{3} + 2.38277 \times 10^{-22}$ 사이에 존재하는 유리수($s / n$)를 찾아야 한다. $log_2{3}$를 연분수 분해 후 근사한 것이 후보가 될 것으로 예상할 수 있다. 
 
 그러나 그 땐 이걸 몰랐다. 
 
@@ -331,7 +331,7 @@ $$n = 72,057,431,991$$
 
 $n$은 사이클에 존재하는 홀수의 개수이다. $s$는 짝수의 개수임을 알 수 있는데, 
 
-$$ s &= \sum_{k=1}^n {a_k} $$ 
+$$ s = \sum_{k=1}^n {a_k} $$ 
 
 에서 $a_k$가 2를 제거한 횟수이기 때문이다. 따라서 $n+s$는 전체 사이클의 길이이다. 
 
