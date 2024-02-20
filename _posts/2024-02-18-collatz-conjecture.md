@@ -259,7 +259,7 @@ $$q_n = \sum_{k=1}^{n-1} {\left( \delta(d_k, p_k) - q_k \right)} + \delta(d_n, p
 
 이다. 
 
-식이 매우 복잡해보이는데, $\displaystyle |N| = \sum_{k=1}^n q_k$이므로 
+식이 매우 복잡해보이는데, $\mid N\mid = \displaystyle\sum_{k=1}^n q_k$이므로 
 
 $$\begin{align}
 |N| &= \sum_{k=1}^n q_k \\
