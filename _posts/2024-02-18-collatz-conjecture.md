@@ -154,7 +154,7 @@ $a = 1$일 때만 $C(n, a) < n$이라는 얘기이다. 따라서 $\left\\{x_n\ri
 
 이제 $\left\\{a_n\right\\}$을 1과 1이 아닌 것으로 나누어보자. $X = \left\\{ a_n \right\\}$에 대해
 
-$$P = \left\\{x \mid x \in X, x \neq 1\right\\}$$
+$$P = \left\{x \mid x \in X, x \neq 1\right\}$$
 
 $$N = X - P$$
 
