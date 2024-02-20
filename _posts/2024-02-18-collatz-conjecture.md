@@ -212,9 +212,12 @@ $$\begin{align}
 $$\begin{gather}
 d_1 = x_1\\
 u_1 = C(d_1, p_1)\\
+\\
 d_2 = C^{q_1}(u_1, 1)\\
 u_2 = C(d_2, p_2)\\
+\\
 \vdots\\
+\\
 u_k = C(d_k, p_k)\\
 d_{k+1} = C^{q_k}(u_k, 1) = d_1
 \end{gather}$$ 
