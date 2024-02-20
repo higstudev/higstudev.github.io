@@ -152,9 +152,9 @@ $$a \geq 2, \ C(n, a) \geq \frac{4n-1}{3} > n$$
 
 $a = 1$일 때만 $C(n, a) < n$이라는 얘기이다. 따라서 $\{x_n\}$은 $\{a_n\}$이 1이면 감소하고, 아니면 증가한다. 
 
-이제 $\{a_n\}$을 1과 1이 아닌 것으로 나누어보자. $X = \left\{ a_n \right}$에 대해
+이제 $\{a_n\}$을 1과 1이 아닌 것으로 나누어보자. $X = \left\\{ a_n \right\\}$에 대해
 
-$$P = \left\{x \mid x \in X, x \neq 1\left\}$$
+$$P = \left\{x \mid x \in X, x \neq 1\right\}$$
 
 $$N = X - P$$
 
